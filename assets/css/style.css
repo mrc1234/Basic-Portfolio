@@ -1,0 +1,109 @@
+/*
+
+Each of these CSS elements is associated with an HTML Element, Class, or ID.
+Flip between this CSS file and the HTML to see how things line up.
+Experiment with deleting lines of code from the CSS to see how it affects the webpage when you refresh in the browser.
+
+*/
+
+.main-header-top {
+    height: 70px;
+    width: 100px;
+}
+
+.main-header-section h1 {
+    font-family: 'Georgia', Times, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    color: white;
+}
+
+header nav {
+    /* float: right; */
+}
+
+.main-header-section {
+    margin-left: 200px;
+    background-color: #4aaaa5;
+    padding: 5px 0px 0px 20px;
+    height: 70px;
+    width: 100px;
+    display: inline;
+}
+
+.nav-list li {
+    display: inline;
+    padding-left: 10px;
+    /* color: #d7dce1; */
+    text-decoration: none;
+    color: inherit;
+       float: left;
+}
+
+.nav-list {
+    margin-left: 200px;
+    display: left;
+    float: left;
+}
+
+.nav-inline {
+    float: left;
+}
+
+.clear-both {
+    clear: both;
+}
+
+picture {
+    margin-left: 0px;
+    float: left;
+    /* float: clear; */
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 18px;
+    line-height: 150%;
+    background: #efeee7;
+}
+
+ul {
+    /* display: inline;
+    padding-left: 10px;
+    /* color: #d7dce1; */
+    /* text-decoration: none;
+    color: inherit; */
+}
+
+/* h3 {
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #eee;
+    text-align: center;
+   
+  } */
+
+h2 {
+    padding: 20px 0;
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #eee;
+    text-align: center;
+}
+
+.nav-lower {
+    display: inline;
+    padding-left: 10px;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer {
+    font-family: 'Georgia', Times, 'Times New Roman', Times, serif;
+    background-color: #4aaaa5;
+}
