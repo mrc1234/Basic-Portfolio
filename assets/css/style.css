@@ -43,7 +43,14 @@ strong {
     
 }
 
-
+.rg_l {
+    display: inline-block;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    height: 100%;
+    position: absolute;
+    text-decoration: none;
+    width: 100%;
+}
 
 
 

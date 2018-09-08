@@ -1,30 +1,203 @@
-<!-- Relative Paths Assignment 2 -->
 <!DOCTYPE html>
 <html lang="en-us">
 
 <head>
   <meta charset="UTF-8">
+  <title>Contact</title>
   <link rel="stylesheet" href="assets/css/reset.css">
-  <!-- <link rel="stylesheet" type="text/css" href="assets/css/style.css"> -->
-  <title>Bio</title>
-
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
   <!-- Fill in the href to the CSS such that this HTML file can access the CSS -->
   <!-- Don't move the HTML or CSS file. Use Relative Linking -->
- 
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+  <script src="main.js"></script>
+   <!-- We link our html to the Bootstrap CDN -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+  crossorigin="anonymous">
+
 </head>
 
-<body>
-    <nav>
-        <ul class="nav-list">
-          <li>
-            <a href="index.html">About</a>
-          </li>
-          <li>
-            <a href="portfolio.html">Profile</a>
-          </li>
-          <li>
-            <a href="contact.html">Contact</a>
-          </li>
-        </ul>
+<style>
+  body {
+    background-color: grey;
+  }
 
-      </nav>
+  .heading-section {
+
+    background-color: white;
+  }
+
+
+  .heading-title-section {
+    margin-left: 15%;
+    /* height: 10vh; */
+    background-color: #4AAAA5;
+  }
+
+  .heading-title {
+    color: white;
+    padding: 20px;
+    font-size: 2rem;
+  }
+
+  .navigation-section {
+    margin-right: 10%;
+    background-color: #ffffff;
+  }
+
+  .paragraph-section {
+    background-color: white;
+    height: 72vh;
+    width: 77%;
+    /* margin-top: 5%;
+    margin-left: 14%;
+    margin-bottom:5%; */
+    margin: 5% 0 5% 14%;
+  }
+
+  .green-line {
+    border: 3px solid green;
+  }
+
+  .grey-line {
+    border: 3px solid grey;
+  }
+
+  .footer-section {
+    background-color:#4aaaa5;
+    padding: 2%;
+  }
+</style>
+
+
+<body>
+
+  <div class="">
+
+
+
+    <div class="row justify-content-between heading-section">
+      <div class="col-4 heading-title-section">
+        <label class="heading-title">Max Rosen</label>
+      </div>
+      <div class="col-4 navigation-section">
+        <nav class="clearfix">
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="portfolio.html">Profile</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    </header>
+    
+      <br>
+
+    <div class="row paragraph-section">
+      <div class="col-12">
+       <strong> Contact Me</strong> 
+      </div>
+
+      <!-- <div class="grey-line"></div> -->
+
+      <div class="col-12">
+        <!-- <img> -->
+        <!--Section: Contact v.2-->
+<section class="section">
+
+  <!--Section heading-->
+  <h2 class="h1-responsive font-weight-bold text-center my-5">Contact us</h2>
+  <!--Section description-->
+  <p class="text-center w-responsive mx-auto mb-5">Do you have any questions? Please do not hesitate to contact us directly. Our team will come back to you within
+      matter of hours to help you.</p>
+
+  <div class="row">
+
+      <!--Grid column-->
+      <div class="col-md-9 mb-md-0 mb-5">
+          <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="name" name="name" class="form-control">
+                          <label for="name" class="">Your name</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+                  <!--Grid column-->
+                  <div class="col-md-6">
+                      <div class="md-form mb-0">
+                          <input type="text" id="email" name="email" class="form-control">
+                          <label for="email" class="">Your email</label>
+                      </div>
+                  </div>
+                  <!--Grid column-->
+
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+                  <div class="col-md-12">
+                      <div class="md-form mb-0">
+                          <input type="text" id="subject" name="subject" class="form-control">
+                          <label for="subject" class="">Subject</label>
+                      </div>
+                  </div>
+              </div>
+              <!--Grid row-->
+
+              <!--Grid row-->
+              <div class="row">
+
+                  <!--Grid column-->
+                  <div class="col-md-12">
+
+                      <div class="md-form">
+                          <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
+                          <label for="message">Your message</label>
+                      </div>
+
+                  </div>
+              </div>
+              <!--Grid row-->
+
+          </form>
+
+          <div class="text-center text-md-left">
+              <a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+          </div>
+          <div class="status"></div>
+      </div>
+      <!--Grid column-->
+
+      <!--Grid column-->
+      <div class="col-md-3 text-center">
+          <ul class="list-unstyled mb-0">
+              <li><i class="fa fa-map-marker fa-2x"></i>
+                  <p>Orlando, Fl</p>
+              </li>
+
+              <li><i class="fa fa-phone mt-4 fa-2x"></i>
+                  <p>Blank</p>
+              </li>
+
+              <li><i class="fa fa-envelope mt-4 fa-2x"></i>
+                  <p>www.grindlimited.com</p>
+              </li>
+          </ul>
+      </div>
+      <!--Grid column-->
+
+  </div>
+
+</section>
+<!--Section: Contact v.2-->
